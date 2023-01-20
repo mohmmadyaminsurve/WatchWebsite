@@ -1,0 +1,109 @@
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+
+
+
+ul,li{
+	list-style: none;
+
+}
+
+footer{
+   background-color: black;
+   color: aliceblue;
+}
+
+.footer_info{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	padding: 50px 0;
+	line-height: 1.2rem;
+}
+
+.footer_info .footer_width{
+	padding: 0 15px;
+}
+
+.footer_info h2{
+	margin-bottom: 20px;
+}
+.about, .contact{
+	width: 40%;
+}
+
+.link{
+	width: 20%;
+	padding-right: 50px;
+}
+
+.shop{
+	margin-left: 65px;
+}
+
+
+.link ul li{
+	margin-bottom: 15px;
+	font-size: 18px;
+	margin-left: 65px;
+	margin-right: 15px;
+    text-align: start;
+}
+
+/* .link ul li a{
+    align-items: center;
+	margin-bottom: 0px;
+	font-weight: lighter;
+	
+} */
+
+.discover{
+	margin-left: 95px;
+}
+.contact ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	margin-left: 95px;
+}
+@media screen and (max-width:766px) {
+	.about, .contact{
+		width: 35%;
+	
+	}
+	.link{
+		width: 45%;
+	}
+
+	.shop, .discover{
+		margin-left: 0px;
+	}
+	
+	.link ul li, .contact ul li{
+	margin-left: 0px;
+}
+}
+
+@media screen and (max-width:767px) {
+	.about, .contact{
+		width: 100%;
+		margin-bottom: 30px;
+	
+	}
+	.link{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.footer_info{
+		flex-direction: column;
+	}
+
+	
+}
+

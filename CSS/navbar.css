@@ -1,0 +1,199 @@
+
+body{
+    overflow-x: hidden;
+}
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: white;
+            align-items: center;
+           
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+           
+            
+        }
+
+        ul{
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+       
+        a{
+            color: #33363D;
+            text-decoration: none;
+            text-align: center;
+            font-family: serif;
+        }
+
+        .navbar{
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+            border-top: 1px solid gainsboro;
+            border-bottom: 1px solid gainsboro;
+            font-size: 1.2rem;
+            text-align: center;
+            /* position: fixed; */
+            
+        }
+
+        .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            gap: 60px;
+            justify-content: center;
+            /* margin-left: auto; */
+            margin-right: 3px auto;
+            /* margin: auto; */
+            
+          
+            
+        }
+
+        .nav-item{
+            align-items: center;
+            text-align: center;
+            
+        }
+        .nav-branding{
+           height: 12px;
+            
+        }
+
+        .nav-link{
+            transition: 0.7s ease;
+        }
+
+        .nav-link:hover{
+            color: dodgerblue;
+        }
+
+        .hamburger{
+            display: none;
+            cursor: pointer;
+        }
+
+        
+
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: black;
+            
+            
+        }
+
+        /* .navbar.logo{
+             float: right; 
+            padding-right: -46px; 
+        } */
+        
+
+        .brandname{
+            margin-left: 170px;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+        .text{
+            /* font-family: 'light'; */
+            font-family: slab-serif;
+            color: #48494B;
+            font-size: 18px;
+        }
+
+
+        @media(max-width:1100px){
+           
+            .brandname{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .hamburger{
+                display: block;
+                float: left;
+                position: absolute;
+               
+            }
+
+            
+            
+
+            .hamburger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1){
+                transform: translateY(8px) rotate(47deg);
+                position: fixed;
+                cursor: pointer;
+            }
+            .hamburger.active .bar:nth-child(3){
+                transform: translateY(-8px) rotate(-47deg);
+                position: fixed;
+                cursor: pointer;
+            }
+            .nav-menu{
+                
+                position: fixed;
+                left: -100%;
+                top: 0px;
+                gap: 0;
+                flex-direction: column;
+                background-color: #fefefe;
+                width: 280px;
+                height: 100vh;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+                
+                
+                
+                
+            }
+            .nav-item{
+                margin: 16px;
+                /* text-align: center; */
+                /* margin-top: 80px; */
+
+              
+
+                
+                        
+            }
+
+            .nav-menu.active{
+                left: 0;
+            }
+
+            a{
+                color: black;
+                
+            }
+
+           
+        }
+
+       
+    
+  
