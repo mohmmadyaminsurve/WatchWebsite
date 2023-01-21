@@ -6,6 +6,7 @@
 	    left: 10%;
 	    cursor: pointer;
 		
+		
 	}
 	h1:before{
 		content: attr(data-count);
