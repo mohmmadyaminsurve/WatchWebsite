@@ -27,38 +27,10 @@
 		opacity: 1;
 	}
 		
-			to{
-				width: 30px;
-			    height: 20px;
-			    left: 1290px;
-			    top: -70px;
-			}
-		}
-		@keyframes second{
-			to{
-				width: 30px;
-			    height: 20px;
-			    left: 948px;
-			    top: -70px;
-			}
-		}
-		@keyframes third{
-			to{
-				width: 30px;
-			    height: 20px;
-			    left: 606px;
-			    top: -70px;
-			}
-		}
-		@keyframes four{
-			to{
-				width: 30px;
-			    height: 20px;
-			    left: 265px;
-			    top: -70px;
-			}
-		} */
+			
 
+		
+	
 
 		
 		.select{
